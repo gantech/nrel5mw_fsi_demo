@@ -7,3 +7,13 @@ Steps to reproduce NREL5MW - FSI - demo
 ``` shell
 srun -n 1152 exawind --nwind 360 --awind 792 nrel5mw-01.yaml &> log
 ```
+
+Versions
+--------
+
+You'd need the latest nalu-wind, amr-wind, exawind-driver repositories as of this commit for this demo. OpenFAST needs this branch (https://github.com/gantech/OpenFAST/tree/f/br_fsi_2) The OpenFAST model of the NREL 5MW in this repository is really old (OpenFAST-3.0). If you manage to update the model of OpenFAST to work with the `dev` branch, please use the `dev` branch of OpenFAST as well (https://github.com/OpenFAST/openfast/tree/dev).
+
+
+
+
+
